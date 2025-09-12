@@ -46,8 +46,8 @@ export const shoutIfExclaiming = (messages: string[]): string[] => {
     const shout = messages.map((m: string): string =>
         m.endsWith("!") ? m.toUpperCase() : m,
     );
-    const final = shout.filter((s: string): boolean => !s.endsWith("?"));
-    return final;
+    const result = shout.filter((s: string): boolean => !s.endsWith("?"));
+    return result;
 };
 
 /**
