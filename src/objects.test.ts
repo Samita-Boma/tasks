@@ -9,7 +9,7 @@ import {
     renameQuestion,
     publishQuestion,
     addOption,
-    mergeQuestion,
+    mergeQuestion
 } from "./objects";
 import testQuestionData from "./data/questions.json";
 import backupQuestionData from "./data/questions.json";
@@ -47,20 +47,15 @@ const [
 describe("Testing the object functions", () => {
     //////////////////////////////////
     // makeBlankQuestion
-
-    test("(3 pts) Testing the makeBlankQuestion function", () => {
+    test("Testing the makeBlankQuestion function", () => {
         expect(
-            makeBlankQuestion(1, "Question 1", "multiple_choice_question"),
+            makeBlankQuestion(1, "Question 1", "multiple_choice_question")
         ).toEqual(BLANK_QUESTIONS[0]);
         expect(
-            makeBlankQuestion(
-                47,
-                "My New Question",
-                "multiple_choice_question",
-            ),
+            makeBlankQuestion(47, "My New Question", "multiple_choice_question")
         ).toEqual(BLANK_QUESTIONS[1]);
         expect(
-            makeBlankQuestion(2, "Question 2", "short_answer_question"),
+            makeBlankQuestion(2, "Question 2", "short_answer_question")
         ).toEqual(BLANK_QUESTIONS[2]);
     });
 
