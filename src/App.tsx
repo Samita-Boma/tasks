@@ -17,6 +17,7 @@ import { GiveAttempts } from "./form-components/GiveAttempts";
 import { EditMode } from "./form-components/EditMode";
 import { MultipleChoiceQuestion } from "./form-components/MultipleChoiceQuestion";
 import { ChangeColor } from "./form-components/ChangeColor";
+import { Quizzer } from "./quizzer/Quizzer";
 
 function App(): React.JSX.Element {
     return (
@@ -24,51 +25,7 @@ function App(): React.JSX.Element {
             <header className="App-header">
                 UD CISC275 with React Hooks and TypeScript
             </header>
-            <p>
-                Edit <code>src/App.tsx</code> and save. This page will
-                automatically reload.
-            </p>
-            <p>Samita Bomasamudram</p>
-            <p> Hello World!!</p>
-            <img src={paris} alt="Art of Paris" />
-            <ul className="AppList">
-                <li>task 1</li>
-                <li>task 2</li>
-                <li>task 3</li>
-                <li>task 4</li>
-            </ul>
-            <Button
-                onClick={() => {
-                    console.log("Hello World!");
-                }}
-            >
-                Log Hello World
-            </Button>
-
-            <Container>
-                <Row>
-                    <Col>
-                        First column
-                        <div
-                            style={{
-                                width: "10%",
-                                height: 20,
-                                backgroundColor: "red",
-                            }}
-                        />
-                    </Col>
-                    <Col>
-                        Second column
-                        <div
-                            style={{
-                                width: "10%",
-                                height: 20,
-                                backgroundColor: "red",
-                            }}
-                        />
-                    </Col>
-                </Row>
-            </Container>
+            <Quizzer></Quizzer>
             <hr></hr>
             <CheckAnswer expectedAnswer="42"></CheckAnswer>
             <hr></hr>
