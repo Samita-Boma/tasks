@@ -22,8 +22,6 @@ function App(): React.JSX.Element {
             <header className="App-header">
                 UD CISC275 with React Hooks and TypeScript
             </header>
-            <Quizzer></Quizzer>
-            <hr></hr>
             <CheckAnswer expectedAnswer="42"></CheckAnswer>
             <hr></hr>
             <GiveAttempts></GiveAttempts>
