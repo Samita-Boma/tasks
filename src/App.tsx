@@ -1,7 +1,5 @@
 import React from "react";
 import "./App.css";
-import paris from "./paris.jpg";
-import { Button, Container, Row, Col } from "react-bootstrap";
 import { ChangeType } from "./components/ChangeType";
 import { RevealAnswer } from "./components/RevealAnswer";
 import { StartAttempt } from "./components/StartAttempt";
@@ -17,7 +15,6 @@ import { GiveAttempts } from "./form-components/GiveAttempts";
 import { EditMode } from "./form-components/EditMode";
 import { MultipleChoiceQuestion } from "./form-components/MultipleChoiceQuestion";
 import { ChangeColor } from "./form-components/ChangeColor";
-import { Quizzer } from "./quizzer/Quizzer";
 
 function App(): React.JSX.Element {
     return (
